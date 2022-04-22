@@ -1,0 +1,136 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.header {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: blue;
+}
+
+.button {
+    display: block;
+    margin: 50px auto 0 auto;
+    background-color: aqua;
+}
+
+.container {
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.user {
+    text-align: center;
+}
+.userGameField {
+    width: 300px;
+    height: 300px;
+    
+}
+
+.container {
+    text-align: center;
+}
+
+.computerGameField {
+    width: 300px;
+    height: 300px;
+    
+}
+
+.row {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rowCell {
+    width: 28px;
+    height: 28px;
+    border: solid;
+    border-width: 1px;
+}
+
+.miss {
+    width: 28px;
+    height: 28px;
+}
+
+.miss::before {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: black;
+    z-index: 1;
+    content: '';
+    transform: translate(9px,9px);
+}
+
+.hit {
+    width: 28px;
+    height: 28px;
+}
+
+.hit::before {
+    display: block;
+    width: 2px;
+    height: 28px;
+    border-radius: 10%;
+    background-color: rgb(152, 19, 19);
+    z-index: 1;
+    content: '';
+    transform: translate(13px,0px) rotate(45deg);
+}
+.hit::after {
+    display: block;
+    width: 2px;
+    height: 28px;
+    border-radius: 10%;
+    background-color: rgb(152, 19, 19);
+    z-index: 1;
+    content: '';
+    transform: translate(14px,-28px) rotate(-45deg);;
+}
+
+.rowCell:hover {
+    background-color: aqua;
+}
+
+.sheep {
+    width: 28px;
+    height: 28px;
+    border: solid;
+    border-width: 1px;
+    background-color: grey;
+}
+
+.sheepType1 {
+    background-color: rgb(25, 30, 17);
+}
+
+.sheepType2 {
+    background-color: rgb(34, 178, 99);
+}
+
+.sheepType3 {
+    background-color: rgb(34, 75, 178);
+}
+
+.sheepType4 {
+    background-color: rgb(178, 34, 159);
+}
+
+.cannotSheep {
+    width: 28px;
+    height: 28px;
+    border: solid;
+    border-width: 1px;
+    /* background-color: rgb(178, 173, 173); */
+}
+
