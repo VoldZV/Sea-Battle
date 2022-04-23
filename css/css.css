@@ -53,6 +53,7 @@
     width: 28px;
     height: 28px;
     border: solid;
+    float: left;
     border-width: 1px;
 }
 
