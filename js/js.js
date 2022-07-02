@@ -1,5 +1,5 @@
 'use strict'
-
+// сделано через взаимодействие с DOM, что оказалось нерационально
 const startGameButton = document.querySelector('.button'),
       userGameField = document.querySelector('.userGameField'),
       computerGameField = document.querySelector('.computerGameField'),
